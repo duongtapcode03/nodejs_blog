@@ -1,47 +1,48 @@
 {
-    "name": "blog",
-    "version": "1.0.0",
-    "description": "",
-    "keywords": [
-        "blog",
-        "nodej"
-    ],
-    "homepage": "https://github.com/duongtapcode03/nodejs_blog#readme",
-    "bugs": {
-        "url": "https://github.com/duongtapcode03/nodejs_blog/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/duongtapcode03/nodejs_blog.git"
-    },
-    "license": "ISC",
-    "author": "duongqx",
-    "type": "commonjs",
-    "main": "src/index.js",
-    "scripts": {
-        "beautiful": "lint-staged",
-        "start": "nodemon --inspect src/index.js",
-        "watch": "sass --watch src/resources/scss:src/public/css",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "dependencies": {
-        "express": "^5.1.0",
-        "express-handlebars": "^8.0.3",
-        "sass": "^1.89.2"
-    },
-    "devDependencies": {
-        "husky": "^9.1.7",
-        "lint-staged": "^16.1.2",
-        "morgan": "^1.10.0",
-        "nodemon": "^3.1.10",
-        "prettier": "^3.6.2"
-    },
-    "lint-staged": {
-        "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "blog",
+    "nodej"
+  ],
+  "homepage": "https://github.com/duongtapcode03/nodejs_blog#readme",
+  "bugs": {
+    "url": "https://github.com/duongtapcode03/nodejs_blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duongtapcode03/nodejs_blog.git"
+  },
+  "license": "ISC",
+  "author": "duongqx",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "lint-staged",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss:src/public/css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "sass": "^1.89.2"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  }
 }
